@@ -1,0 +1,193 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+}
+
+button {
+  background-image: linear-gradient(to right, #5F0A87
+ 0%, #500a90 100%);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+}
+
+button:hover {
+  background-image: linear-gradient(to left, #5F0A87 0%, #500a90 100%);
+}
+
+h1 {
+  color: white;
+  font-size: 80px;
+}
+
+h3 {
+  margin-top: 20px;
+}
+h2, h3, p {
+  margin: 10px;
+}
+
+.animatedLine{
+  margin-left: 10px;
+  width: 1px;
+  height: 2px;
+  background-color: black;
+  -webkit-animation-name: grow;
+  -webkit-animation-duration: 4s;
+  animation-name: grow;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes grow {
+  0%   {width:1px; left:0px; top:0px;}
+  100% {width:150px; left:0px; top:0px;}
+}
+@keyframes grow {
+  0%   {width:1px; left:0px; top:0px;}
+  100% {width:150px; left:0px; top:0px;}
+}
+
+.center {
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 170px;
+  z-index: 50;
+}
+
+.circles {
+  position: absolute;
+}
+
+.circle1{
+  bottom: 40px;
+  right: 40px;
+}
+
+.circle2{
+  bottom: 151px;
+  right: 38px;
+}
+
+.circle3{
+  bottom: 84px;
+  right: 160px;
+}
+
+.circle4{
+  bottom: 165px;
+  right: 148px;
+}
+
+.gradient{
+  background-image: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.15), #000d1a);
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 45;
+}
+
+.homequote {
+  color: white;
+  font-style: italic;
+  margin-top: -50px;
+}
+
+.home {
+  overflow: hidden;
+  position: relative;
+  z-index: 40;
+  border-color: transparent rgba(0,0,0,0.4) transparent transparent;
+}
+
+.homepage {
+  background-color: #000d1a;
+  height: 100vh;
+  position: relative;
+  transform: skewY(3deg);
+  transform-origin: top right;
+  width: 100vw;
+  z-index: 35;
+}
+
+@-webkit-keyframes movestars {
+  from {background-position: 0px 5000px;}
+  to {background-position: 0px 0px;}
+}
+
+.menu{
+  height: 40px;
+  background-color: black;
+  color: white;
+  display: grid;
+  font-size: 12px;
+  grid-template-columns: 55px 55px 80px 100px;
+  position: fixed;
+  width: 100vw;
+  top: 0px;
+  z-index: 55;
+}
+
+.section2 {
+  background-color: gainsboro;
+  height: 95vh;
+  width: 100vw;
+  position: relative;
+  z-index: 50;
+}
+
+.section3 {
+  background-color: #000d1a;
+  color: white;
+  display: flex;
+  height: 83vh;
+  justify-content: center;
+  margin-top: -55px;
+  padding: 80px;
+  z-index: 50;
+}
+
+.stars {
+  background-image:
+    radial-gradient(white, rgba(255,255,255,.1) 3px, transparent 3px),
+    radial-gradient(white, rgba(255,255,255,.4) 1px, transparent 2px);
+  background-size: 277px 222px, 137px 150px;
+  background-position: 600px 400px, 500px 400px;
+  bottom: 0px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+  -webkit-animation: movestars 600s linear infinite;
+  z-index: 46;
+}
+
+.verticalLines {
+  position: absolute;
+  z-index: 49;
+}
+
+  @-webkit-keyframes growVertical {
+    0%   {height:1px; left:0px; top:0px;}
+    100% {height:100vh; left:0px; top:0px;}
+  }
+  @keyframes growVertical {
+    0%   {height:1px; left:0px; top:0px;}
+    100% {height:100vh; left:0px; top:0px;}
+  }
+
+  #menu-buttons {
+    background: none;
+    border-radius: 0px;
+  }
+  #menu-buttons:hover {
+    background: #181818;
+  }
